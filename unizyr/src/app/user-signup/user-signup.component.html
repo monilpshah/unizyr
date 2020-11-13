@@ -1,0 +1,30 @@
+<div>
+    <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." [(ngModel)]="name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" [(ngModel)]="email" placeholder="Your Email Id..">
+
+        <label for="mobile">Mobile Number</label>
+        <input type="text" id="mobile" name="mobile" [(ngModel)]="mobile" maxlength="10" minlength="10" placeholder="Your Mobile Number Without Country Code..">
+
+        <label for="address">Adress</label>
+        <input type="text" id="flatNumber" [(ngModel)]="flatNumber" name="flatNumber" placeholder="Flat/House Number..">
+        <input type="text" id="addressLineOne" [(ngModel)]="addressLineOne" name="addressLineOne" placeholder="Address Line 1..">
+        <input type="text" id="addressLineTwo" [(ngModel)]="addressLineTwo" name="addressLineTwo" placeholder="Address Line 2..">
+        <select id="city" name="city" [(ngModel)]="city">
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Rajkot">Rajkot</option>
+          </select>
+        <select id="state" name="state" [(ngModel)]="state">
+            <option value="Gujarat">Guajarat</option>
+            <option value="Maharastra">Maharastra</option>
+            <option value="Rajasthan">Rajasthan</option>
+          </select>
+        <input type="text" id="pincode" [(ngModel)]="pincode" name="pincode" placeholder="Pincode.." maxlength="6" minlength="6">
+
+        <input type="submit" value="Submit" (click)="submitForm()">
+    </form>
+</div>

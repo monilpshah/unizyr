@@ -1,0 +1,25 @@
+<h1>List of Users</h1>
+<table border="2 black">
+    <tr>
+        <th>Name</th>
+        <th>Email Id</th>
+        <th>Mobile Number</th>
+        <th>Flat Number</th>
+        <th>Adress line 1</th>
+        <th>Adress line 2</th>
+        <th>city</th>
+        <th>State</th>
+        <th>Pincode</th>
+    </tr>
+    <tr *ngFor="let item of usersData,let i = index">
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{flatNumber[i]}}</td>
+        <td>{{addressLineOne[i]}}</td>
+        <td>{{addressLineTwo[i]}}</td>
+        <td>{{city[i]}}</td>
+        <td>{{state[i]}}</td>
+        <td>{{pincode[i]}}</td>
+    </tr>
+</table>
